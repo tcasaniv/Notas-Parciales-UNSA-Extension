@@ -1,0 +1,23 @@
+{
+  "name": "Notas-UNSA Extension (by @tcasaniv)",
+  "description": "Una extensión de Chrome que permite calcular el promedio y qué notas se necesitan para aprobar una asignatura.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons" : {
+      "128" : "128.png",
+      "512" : "512.png"
+  },
+  "background" :{
+      "service_worker": "background.js"
+  },
+  "action" : {
+      "defautl_icon" : "icon.png"
+  },
+  "permissions":[
+       "scripting"
+  ],
+  "host_permissions": [
+    "http://extranet.unsa.edu.pe/sisacad/parciales18/index.php"
+  ],
+  "author": "Terry Casani"
+}
